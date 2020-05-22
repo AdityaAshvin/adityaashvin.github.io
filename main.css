@@ -1841,6 +1841,7 @@ input::-moz-focus-inner {
     width: 100%;
     background-color: #050505;
     padding: 120px 44px 64px;
+    font-size: xx-large;
   }
 
   .header-nav-wrap .header-main-nav {
@@ -1965,12 +1966,12 @@ input::-moz-focus-inner {
   z-index: 1;
 }
 
-.intro-text h3 {
-  font-family: "Roboto", sans-serif;
+.intro-text h2 {
+  font-family: cursive;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.333;
-  color: #cf1767;
+  color: #ffffff !important;
   margin-top: 0;
 }
 
