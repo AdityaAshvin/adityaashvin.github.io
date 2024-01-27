@@ -22,7 +22,7 @@ li {
 .left-navbar {
   display: flex;
   font-size: 12px;
-  margin-left: 100px;
+  margin-left: 130px;
   padding-bottom: 30px;
   padding-top: 30px;
   padding-left: 20px;
@@ -63,24 +63,22 @@ li {
   border: none;
   border-color: #fff;
   margin-bottom: 40px;
-  width: 1239px;
-  height: 800px;
+  height: 750px;
+  width: 1235px;
   overflow: hidden;
 }
 
 .bg-img1 {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  right: auto;
-  bottom: auto;
-  width: 1239px;
-  height: 800px;
+  width: 1235px;
+  height: 750px;
   margin: 0;
-  padding:0;
+  padding: 0;
   z-index: -1;
-  background-size: 1239px 1000px;
-  background-position: center;
+  background-size: 1235px 750px;
+  background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border: none;
@@ -114,7 +112,7 @@ li {
 .column {
   position: relative;
   float: left;
-  width: 40%;
+  width: 35%;
   height: 100%;
 }
 
@@ -122,12 +120,12 @@ li {
   position: relative;
   margin-bottom: 20px;
   height: 100%;
-  width: 1185px;
+  width: 1230px;
   border: none;
   border-color: #fff;
   overflow: hidden;
   color: white;
-  margin-left: 50px;
+  margin-left: 45px;
   margin-right: 80px;
 }
 
@@ -209,12 +207,12 @@ li {
   text-align: center;
   position: relative;
   margin-bottom: 40px;
-  height: 650px;
+  height: 600px;
   border: none;
   border-color: #fff;
   width: 1050px;
   overflow: hidden;
-  margin-left: 90px;
+  margin-left: 95px;
   margin-right: 70px;
 }
 
@@ -227,10 +225,10 @@ li {
   width: 1050px;
   height: 600px;
   margin: 0;
-  padding:0;
+  padding: 0;
   z-index: -2;
-  background-size: cover;
-  background-position: center;
+  background-size: 1145px 975px;
+  background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border: none;
@@ -326,7 +324,7 @@ li {
   margin-bottom: 20px;
   position: relative;
   top: 30%;
-  left: 60%;
+  left: 63%;
   right: auto;
   bottom:70%;
   font-size: 13px;
