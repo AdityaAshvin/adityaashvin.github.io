@@ -1,358 +1,505 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Aditya's personal portfolio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Aditya Ashvin Portfolio</title>
 
-    <!-- script
-    ================================================== -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Aditya Ashvin | Portfolio" />
 
-    <script type= "text/javascript">
-    var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Aditya Ashvin Portfolio" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Portfolio of Aditya Ashvin" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
 
-        if (this.isDeleting) { delta /= 2; }
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+      gtag("config", "UA-122228201-4")
     </script>
-    
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
-</head>
-
-<body id="top">
-
-    <div id="preloader">
-        <div id="loader"></div>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <!-- background image if needed: style="background-image: url('./assets/background-top.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;"-->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, I'm <br> <span class="text-color-main name">Aditya Ashvin</span>
+          <br />
+          Innovation Enthusiast in Tech.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
     </div>
+    <!-- /END Hero Section -->
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>
-            </ul>
-
-            <ul class="header-social">
-                <li><a href="https://facebook.com/aditya.ashvin.1"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/AdityaAshvin"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/AdityaAshvin"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/aditya.ashvin/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aditya-ashvin-a52438197/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section>
-<h1 style="color:yellow;text-align:center;padding-top:50px;font-family:cursive!important;"> Hi, <br> I am Aditya Ashvin. </h2>
- <h1>
-  <h2 name="type" style= "text-align:center!important;color:violet;font-family:typewriter" class="typewrite" data-period="2000" data-type='[" Full Stack (Django) Developer.", "UI/UX Designer.", "Android Developer.", "Open Source Enthusiast."]'>
-  </h2>
-    </section> <!-- end intro -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section" style="padding-top:40px!important;">
-
-        <div class="about-me">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
-                </div>
-            </div>
-
-            <div class="row about-me__content" data-aos="fade-up">
-                <div class="column large-full about-me__text">
-                    <p class="lead">
-                    Interested in learning new programming languages and designing and developing websites.
-                    </p>
-
-                    <p>
-                    A boy with a mixed culture background. Originally from Trivandrum,Kerala. Born in Hyderabad, Telangana. Lived in Mumbai, Maharasthra for first 9 years of his life.
-                    Then shifted to Visakhapatnam,Andhra Pradesh. Spent next 9 years in Visakhapatnam. 
-                    </p>
-
-                    <p>
-                    Got fascinated in programming when i first started programming in 7th standard. First language that i learnt was BASIC programming language.
-                    In 8th std started C++ langauge. In 9th and 10th learnt about Java. I learnt these languages as a part of the ICSE board curriculum.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://adityaashvin.github.io/Personal_website.github.io/#contact" class="btn btn--stroke full-width">Hire Me</a>
-                </div>
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="resume.pdf" class="btn btn--primary full-width">View my CV</a>
-                </div>
-            </div>
-
-        </div> <!-- end about-me -->
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Education</h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2019 - Present</p>
-                                <h3 class="item-title">Amrita Vishwa Vidyapeetam</h3>
-                                <h5>Bachelor of Techonology</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Pursuing Btech in Electronics and computer enginnering.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2017 - June 2019</p>
-                                <h3 class="item-title">FIITJEE junior college</h3>
-                                <h5>Junior college</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Passed 12th std with 9.75 cgpa</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">March 2010 - June 2017</p>
-                                <h3 class="item-title">Timpany School,Visakhapatnam</h3>
-                                <h5>High school</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Passed 10th std with 95.65% in ICSE board curriculum.</p>
-                            </div>
-                            </div>
-                        
-                        <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <p class="timeline__timeframe">March 2006 - June 2010</p>
-                                    <h3 class="item-title">North Point School,Mumbai.</h3>
-                                    <h5>Primary school</h5>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Studied from 1st std to 4th std here.</p>
-                            </div>
-
-                    </div>
-                </div>
-
-                
-            </div>
-
-        </div> <!-- end about-experience -->
-
-</section> <!-- end s-about -->
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
-            </div>
+    <!-- About Section -->
+    <!-- style if needed to be changed later using an image: style="background-image: url('./assets/background-about.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;"-->
+      <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/aditya.jpg"
+              alt="Profile Image"
+              width="400"
+              height="400"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text" style="color:  #FFFFFF; font-weight: bold;">
+            I am a current CS Grad student at University of Southern California, Los Angeles, CA, USA. I am a driven individual with a passion for leveraging technology to tackle complex challenges and drive innovation.
+             With a solid foundation in computer science and a diverse skill set encompassing languages, frameworks, and tools such as Python, 
+             Angular, Machine Learning, Django, I thrive in dynamic environments where creativity and problem-solving are valued.<br><br><br>     
+            </p>
+            <p class="about-wrapper__info-text" style="color: #FFFFFF; font-weight: bold;">
+            Driven by a strong foundation in computer science coursework and a thirst for continuous learning, I am poised to contribute 
+            effectively to innovative projects and make a meaningful impact in the tech industry.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="https://drive.google.com/file/d/1p7lAWxY-JuiPH8RfYlBTPQKreotwIsVq/view?usp=drive_link" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:#0">adityaashvin2.com</a>
-                </p>
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
 
-                <p class="section-desc">
-                I'm happy to connect, listen and help. Let's work together and build
-                something awesome.
-                <a href="mailto:#0">Email Me</a>.
-                </p>
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">EventzForU <p style="color: #5b86e5;">(Web Dev, Django Framework, HTML, CSS, JS, Bootstrap)</p></h3>
+              <p class="project-wrapper__text-info">
+                Welcome to my event registration platform, where you can discover and register for exciting events effortlessly. 
+                Developed with Django, our website offers a user-friendly interface for browsing and signing up for events seamlessly. 
+                Whether you're looking for workshops, conferences, or networking opportunities, we've got you covered. Stay updated with event details, schedules, and registration deadlines. 
+                Start exploring and participating in enriching experiences today with our intuitive platform!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/AdityaAshvin/EventsForU" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
             </div>
+
+            <div class="project-wrapper__image">
+              <a target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <iframe width="600" height="1000" src="https://www.youtube.com/embed/8xnAEtwq9pQ" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">StocksForU <p style="color: #5b86e5;">(Web Dev, Angular, MongoDB, NodeJS, HTML, CSS, JS, Bootstrap)</p></h3>
+              <p class="project-wrapper__text-info">
+                Welcome to my stock trading platform, where you can buy and sell stocks with a fixed wallet and practice trading risk-free. 
+                Built on Flask and powered by MongoDB, we provide real-time data from Finnhub and Polygon, including interactive charts and essential trading information.
+                Whether you're a seasoned trader or just starting out, our platform empowers you to make informed investment choices. 
+                Explore the markets, track your portfolio, and stay ahead of the curve with our dynamic tools. Start your trading journey today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://aastocksearch4wt.wl.r.appspot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stockssearchweb.JPG"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+            <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">StocksForU Android App <p style="color: #5b86e5;">(Android App, Java, XML)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to my stock trading app, where you can buy and sell stocks with a fixed wallet and practice trading risk-free. 
+              Developed using Java and native Android technologies, our app offers real-time data from Finnhub and Polygon, featuring interactive charts and essential 
+              trading information. Whether you're a seasoned trader or just starting out, our platform empowers you to make informed investment choices. 
+              Explore the markets, track your portfolio, and stay ahead of the curve with our dynamic tools. Start your trading journey today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <iframe width="600" class="img-fluid" height="300" src="https://www.youtube.com/embed/DeD4ZhJnVWM" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Coin Dispenser <p style="color: #5b86e5;">(Internet Of Things, Electronics, Arduino, C Programming)</p></h3>
+              <p class="project-wrapper__text-info">
+                Welcome to our currency dispenser project, designed to efficiently dispense the desired number of coins based on the input amount. 
+                Utilizing an Arduino Uno R3 and servo motors, our project dispenses five rupee coins from one pipe and two and one rupee coins from another. 
+                Initially aiming for a coin sorting and counting machine, we pivoted due to challenges with coin radii. With input provided through the serial monitor, 
+                our dispenser accurately dispenses the required coins. Hardware setup and Arduino connections were completed, followed by coding and design efforts. 
+                Our project was fully functional and well-received, earning us the first prize in the EAC section and a Raspberry Pi.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/AdityaAshvin/coin_dispenser" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/currency_dispenser.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="500"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">WeatherForU <p style="color: #5b86e5;">(Web Dev, Django, HTML, CSS, JS)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to my weather update website, where you can access real-time weather information effortlessly. 
+              Developed with Django and powered by data from the OpenWeather API, our platform provides accurate and up-to-date weather forecasts for locations worldwide. 
+              Whether you're planning your day or tracking weather trends, our website offers a user-friendly interface for accessing temperature, humidity, wind speed, and more. 
+              Stay informed and make informed decisions with our reliable weather updates. 
+              Start exploring the weather in your area and beyond today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/AdityaAshvin/WeatherForU_Website" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/weatherforu.jpeg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="500"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">SketchGen <p style="color: #5b86e5;">(Machine Learning, Generative AI, Python)</p> </h3>
+              <p class="project-wrapper__text-info">
+              Welcome to our doodle generation project, where you can unleash your creativity with the help of machine learning models. 
+              Using the QuickDraw dataset, our platform allows users to input a doodle, and our models generate the next continuation stroke. With two implemented models - 
+              Transformer-based and LSTM-based - users can explore different approaches to doodle generation. Whether you're an artist looking for inspiration or just want to have fun
+              doodling, our platform offers an interactive and engaging experience. 
+              Start doodling and let our models inspire your creativity today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/bigBrain1901/doodle-generation" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/sketchgen.JPG"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="500"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title"><u style="color: #5b86e5;">Research Publication:</u> Trinetra - A companion for the Blind <p style="color: #5b86e5;">(Machine Learning, Flutter App, Computer Vision, Speech2Text, Python)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to Trinetra App, a revolutionary companion designed to empower blind individuals to navigate the world independently. 
+              By harnessing cutting-edge technologies such as computer vision, speech recognition, image processing, and OCR, Trinetra provides a seamless experience for the blind.
+              Developed using the Flutter Framework, our app runs smoothly on both Android and iOS platforms. Trinetra enables users to identify objects in their surroundings, 
+              recognize text, and access information such as time, weather, and phone battery level through audio feedback.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://ieeexplore.ieee.org/document/9673267"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Publication</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/trinetra.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="200"
+                    height="100"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title"><u style="color: #5b86e5;">Research Publication:</u> Automatic Water Tank Cleaning Robot <p style="color: #5b86e5;">(Robotics, Deep Learning, Gazebo Simulation, Electronics)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to our innovative water tank cleaning robot system, designed to revolutionize traditional cleaning procedures. Our robot addresses the 
+              inefficiencies, safety concerns, and environmental issues associated with manual cleaning methods. Developed using Fusion 360 and simulated in Gazebo, 
+              our robot is equipped to clean both the floor and walls of water tanks effectively. Autonomous functionality is achieved through programs written in the 
+              Robot Operating System (ROS), allowing the robot to navigate and perform cleaning tasks with precision.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://ieeexplore.ieee.org/document/10047423"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Publication</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <iframe width="600" class="img-fluid" height="300" src="https://www.youtube.com/embed/FgVAWUOkzVk" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
         </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
 
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-     
-
-            <div class="column large-7 medium-full contact-social">
-                <h4>Social</h4>
-                <ul>
-                    <li><a href="https://facebook.com/aditya.ashvin.1" title="Facebook">Facebook</a></li>
-                    <li><a href="https://twitter.com/AdityaAshvin" title="Twitter">Twitter</a></li>
-                    <li><a href="https://instagram.com/aditya_ashvin16" title="Instagram">Instagram</a></li>
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>© Copyright AA 2019</span> 
-            </div>            
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact ME</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+          <i class="fa-solid fa-envelope"></i> adityaashvin2@gmail.com</p>
         </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/aditya.ashvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/aditya.ashvin.1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aditya-ashvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/AdityaAshvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Aditya Ashvin
+        </p>
+      </div>
     </footer>
+    <!-- END Footer Section -->
 
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div><!-- end photoSwipe background -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/effects.js"></script>
-
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
