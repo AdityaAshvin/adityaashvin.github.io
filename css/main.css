@@ -12,6 +12,7 @@ html {
 body {
   text-align: center;
   line-height: 1.5;
+  background-color: #333;
 }
 h1 {
   font-weight: 700;
@@ -355,7 +356,7 @@ section .row span {
 }
 #about .about-wrapper__image {
   display: flex;
-  height: 100%;
+  height: auto;
   align-items: center;
   justify-content: center;
 }
