@@ -1,568 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://kit.fontawesome.com/27528b3ae0.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="innovators.css" />
-  <link rel="icon" href="school_assets/footer_logo.png" type="image/x-icon">
-  <link rel="shortcut icon" href="school_assets/footer_logo.png" type="image/x-icon">
-  <title>Innovators International School | Visakhapatnam</title>
-</head>
-<body>
-  
-<!-- Navbar here -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 fixed-top" style="background-color: #AD0000 !important;">
-  <div class="container-fluid">
-    <a class="navbar-brand">
-      <!--<img src="school_school_assets/android-chrome-512x512.png" alt="" width="80" height="80" class="d-inline-block align-text-top">-->
-      <span class="navbar-brand-text"><img src="school_assets/school_logo_final.jpg" style="max-width: 180px;"></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <!-- Add your responsive navbar links here -->
-        <li class="nav-item">
-          <a class="nav-link" href="#about" style="color: #FFFFFF !important;"><b>Curriculum</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#leadership" style="color: #FFFFFF !important;"><b>Faculty</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#reviews" style="color: #FFFFFF !important;"><b>Testimonials</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#photos" style="color: #FFFFFF !important;"><b>Photos</b></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact" style="color: #FFFFFF !important;"><b>Contact</b></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-<!-- Carousel -->
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="school_assets/carousel1.jpg" class="d-block w-100 img-fluid" alt="Students studying in class">
-    </div>
-    <div class="carousel-item">
-      <img src="school_assets/carousel2.jpeg" class="d-block w-100 img-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="school_assets/carousel3.jpg" class="d-block w-100 img-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="school_assets/carousel4.jpg" class="d-block w-100 img-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="school_assets/carousel5.jpg" class="d-block w-100 img-fluid" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 
-<!-- About -->
-<div class="text-center pt-3 pb-3" style="background-color: #e3f2fd;">
-<div class="container text-center mt-3" id="about">
-  <h1 style="font-family: 'Noto Serif', serif;">Welcome to <span style="color: #ff6600;">Innovators International School</span></h1>
-  <div class="row justify-content-center">
-  <p class="lead">🌟 Unleash the Leaders of Tomorrow: <b style="color: #ff6600;">Innovators International School Visakhapatnam</b> Awaits Your Child's Brilliance! 🌟</p>
-    <hr class="d-sm-none my-4">
-    <div class="col-lg-6">
-      <h1 style="color:#D6223F"> IGCSE Curriculum </h1>
-      <h3 style="color: #ff6600;"> Nursery to Grade V </h3>
-      <p>Ready to embark on a voyage where imagination is the compass, and education is the key to a world of endless possibilities? Innovators International School Visakhapatnam invites you to join our transformative journey!</p>
-      <p>At Innovators, we believe each child is a beacon of untapped potential, awaiting the right environment to flourish. <b style="color: #ff6600;">From Nursery to Grade V</b>, our mission is clear: to provide a transcendent education that nurtures global citizens. 🌍</p>
-      <p>Our <b style="color: #ff6600;">Cambridge IGCSE curriculum</b> empowers students to thrive in a world that's ever-changing. Through holistic education, we foster not only knowledge but also critical thinking, creativity, and a lifelong thirst for learning. 💡</p>
-      <p>Innovation pulses through the veins of our institution. Whether it's hands-on science experiments or imaginative arts projects, every moment is an opportunity for our students to unearth their passions and strengths.</p>
-      <p>👩‍🏫 Our educators are more than just teachers; they're guides on each child's educational odyssey. With personalized attention, we ensure every student receives the support needed to reach their zenith.</p>
-      <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-upper-secondary/cambridge-igcse/curriculum/" class="btn btn-primary rounded-pill border-white mb-2 p-2 pe-3 ps-3"> <i class="bi bi-info-square-fill"></i> Learn more about IGCSE Curriculum </a>
-    </div>
-    <div class="col-lg-6">
-    <hr class="d-sm-none my-4">
-      <h1 style="color:#D6223F"> NCERT Curriculum </h1>
-      <h3 style="color: #ff6600;"> Grades I to X </h3>
-      <p>🚀 Embark on an Innovation Odyssey: Prepare your child for tomorrow's infinite possibilities with our <b style="color: #ff6600;">cutting-edge STEM curriculum</b>. Beyond mere subjects, we nurture a mindset of exploration and creativity, sparking innovation and honing critical thinking.</p>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-<p>🔬 Forge Strong Foundations: Greatness springs from solid roots. Our specialized JEE Math and NEET Science programs build not just knowledge but deep understanding and problem-solving prowess. With personalized mentorship, we empower students to triumph over exams and life's challenges.</p>
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Aditya Ashvin Portfolio</title>
 
-<p>📚 Aligned with Excellence: <b style="color: #ff6600;">Rooted in the NCERT syllabus</b>, our curriculum ensures holistic education and stellar performance in national exams. Every lesson propels students towards academic brilliance and personal growth.</p>
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Aditya Ashvin | Portfolio" />
 
-<p>👩‍🏫 Personalized Attention, Boundless Growth: In intimate classes of 15 to 20 students, each child receives tailored support and encouragement, fostering their unique talents and aspirations.</p>
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
 
-<p>💡 Where Learning Thrives: Dive into an immersive journey where textbooks ignite discovery. Through hands-on experiences, we cultivate a lifelong passion for learning, empowering students to explore, innovate, and lead.</p>
-<a href="https://ncert.nic.in/syllabus.php" class="btn btn-primary rounded-pill border-white mb-2 p-2 pe-3 ps-3"> <i class="bi bi-info-square-fill"></i> Learn more about NCERT Curriculum </a>
-    </div>
-  <hr class="d-sm-none my-4">
-  <p>🌟 Join the Movement: Be part of the Innovators Family and watch your child soar. Together, let's sculpt a future where every dream is within reach! <b style="color:#ff6600; font-size: larger;">Admissions Open!</b> Contact us today to embark on your child's journey towards a luminous tomorrow! 🚀</p>
-  </div>
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
 
-<h3 style="color: #ff6600;"> Our Motto - <b style="color: #D6223F;"> "Ignite Brilliance" </b></h3>
-<!--<img src="school_assets/logo.jpg" class="img-fluid" width="30%" height="30%">-->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://adityaashvin.github.io" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Aditya Ashvin Portfolio" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Portfolio of Aditya Ashvin" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://adityaashvin.github.io/assets/aditya.jpg"
+    />
 
-</div>
-</div>
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-<!-- Facilities -->
-<div style="background-color: #e8f5e9" class="pb-3 pt-3" id="facilites">
-<div class="container text-center">
-<h1 style="font-family: 'Noto Serif', serif; color: #D6223F;"> Innovators Activities </h1>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card rounded-card h-100">
-        <img src="school_assets/creative-arts.jpeg" class="card-img-top rounded-image" alt="Image 1">
-        <div class="card-body">
-          <h5 class="card-title">Innovators Creative Arts</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card rounded-card h-100">
-        <img src="school_assets/performing_arts.jpg" class="card-img-top rounded-image" alt="Image 1">
-        <div class="card-body">
-          <h5 class="card-title">Innovators Peforming Arts</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card rounded-card h-100">
-        <img src="school_assets/creative_time.JPG" class="card-img-top rounded-image" alt="Image 1" style="max-height: 270px;">
-        <div class="card-body">
-          <h5 class="card-title">Innovators Creative Time </h5>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card rounded-card h-100">
-        <img src="school_assets/ethos.JPG" class="card-img-top rounded-image" alt="Image 1" style="max-height: 270px;">
-        <div class="card-body">
-          <h5 class="card-title">Innovators Ethos Labs</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card rounded-card h-100">
-        <img src="school_assets/zen_yoga.jpg" class="card-img-top rounded-image" alt="Image 1">
-        <div class="card-body">
-          <h5 class="card-title">Innovators Zen Yoga</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card rounded-card h-100">
-        <img src="school_assets/physical_education.jpg" class="card-img-top rounded-image" alt="Image 1" style="max-height: 265px;">
-        <div class="card-body">
-          <h5 class="card-title">Innovators Physical Education</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
 
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-<!-- Leadership -->
-<div style="background-color: #e8f5e9" class="pb-3">
-<div class="container text-center" id="leadership">
-<h1 style="font-family: 'Noto Serif', serif; color: #D6223F;"> Faculty </h1>
+      gtag("config", "UA-122228201-4")
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <!-- background image if needed: style="background-image: url('./assets/background-top.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;"-->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, I'm <br> <span class="text-color-main name">Aditya Ashvin</span>
+          <br />
+          Innovation Enthusiast in Tech.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
 
-<div class="container">
-    <div class="row">
-        <!-- First Card -->
-        <div class="col-lg-12 mb-4">
-            <div class="card h-100">
-                <div class="row no-gutters">
-                    <div class="col-lg-4">
-                        <img src="school_assets/leadership1.png" class="card-img img-fluid p-3" alt="Image 1" style="max-width: 600px;">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="card-body mb-0">
-                            <h5 class="card-title">Mr. Ram Indukuri - Founder Director</h5>
-                            <p style="text-align: justify;"> As the Director of Innovators International School, I am privileged to lead an environment where innovation is not just encouraged, but celebrated. It is my pleasure to introduce myself – Venkata Rama Raju Indukuri.
-
-My journey from being a Jawaharlal Nehru Technological University topper to founding Innovate Apps Inc in the USA has been a testament to the power of ambition and innovation. For over a decade, I have led ventures that have redefined the boundaries of technology and human potential.
-
-Now, as the Founder Director of Innovators International School Foundation, I am committed to instilling the same spirit of innovation and excellence in each of our students. Beyond academics, we aim to ignite curiosity, nurture creativity, and foster an unyielding spirit within our students.
-
-Together, let us embark on this journey of discovery, drawing inspiration from each other's stories and experiences. Welcome to Innovators International School, where the journey to lifelong excellence begins with a spark of innovation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <img src="school_assets/leadership2.jpg" class="card-img-top" alt="Image 2">
-                <div class="card-body">
-                    <b class="card-title">Mrs. Parvathy Ashvin</b>
-                    <p class="card-text">Principal</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <img src="school_assets/leadership3.jpg" class="card-img-top" alt="Image 3" style="max-height: 235px;">
-                <div class="card-body">
-                    <b class="card-title">Mrs. Goutami</b>
-                    <p class="card-text">Principal</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <img src="school_assets/leadership4.jpeg" class="card-img-top" alt="Image 3" style="max-height: 235px;">
-                <div class="card-body">
-                    <b class="card-title">Mr. Nageswara Rao Kannam</b>
-                    <p class="card-text">Principal</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<!--
-<div class="container mt-5" id="reviews">
-  <h1 class="mb-4">Google Reviews</h1>
-  <div class="row">
-    <div class="col-md-6 col-lg-4 mb-4" *ngFor="let review of reviews">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">{{ review.author_name }}</h5>
-          <p class="card-text">{{ review.text }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-<div  style="background-color: #e3f2fd;" class="pb-3 pt-3">
-<div class="container text-center" id="photos">
-<h1 style="font-family: 'Noto Serif', serif; color: #D6223F;"> Photos </h1>
-  <div class="row g-0">
-    <div class="col-lg-3 g-0">
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipP7AspB4TPS5gtpyU5UINcySKXPg3vK9fVFQ-mv=s1360-w1360-h1020"><img src="school_assets/photos1.jpg" class="img-fluid" alt="Image 1"></a>
-    </div>
-    <div class="col-lg-3">
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipOuug0HoCU9itk4yoHcPVK2UxiJ6WB-yQREGQxW=s1360-w1360-h1020"><img src="school_assets/photos3.jpeg" class="img-fluid" alt="Image 2"></a>
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipPsGypiZS-3bCdYR9jjoAmh32_xrh9ZH1OK2Ecd=s1360-w1360-h1020"><img src="school_assets/photos3.jpg" class="img-fluid" alt="Image 2"></a>
-    </div>
-    <div class="col-lg-3">
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipMY1GpHV6LpIFU18pKUGApBz4-QygVMd3rVn7hV=s1360-w1360-h1020"><img src="school_assets/photos4.jpeg" class="img-fluid" alt="Image 3"></a>
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipOjb7PuF3svGl5rXqa6jdYlRh1QvEn_j_3G9iRB=s1360-w1360-h1020"><img src="school_assets/photos5.jpg" class="img-fluid" alt="Image 3"></a>
-    </div>
-    <div class="col-lg-3">
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipPcdH-4pjfhkWRHfrguzFzYN18ZHEKEkV-Vguw6=s1360-w1360-h1020"><img src="school_assets/photos6.jpeg" class="img-fluid" alt="Image 3"></a>
-      <a target="_blank" href="https://lh3.googleusercontent.com/p/AF1QipPUkGXiEsDfi7kZa4vnX4RPTOxsMUPHRjm-1dKt=s1360-w1360-h1020"><img src="school_assets/photos2.jpg" class="img-fluid" alt="Image 3"></a>
-    </div>
-  </div>
-  <!--
-  <div class="row">
-    <div class="col-md-3">
-      <img src="image5.jpg" class="img-fluid" alt="Image 5">
-    </div>
-  </div> -->
-  <div class="row mt-4">
-    <div class="col-lg-12">
-  <a href="https://photos.google.com/share/AF1QipPhKapneGd0dAjCGXLyPdW3CW_xsW7jVjHiLGXJFOhaJvG4J6NoBVC6IGAs8YWQmQ?key=Mi1wVXN3WHJKMTRnRHdCSEhWc2VIQTF3T0N2TC1B" target="_blank" class="btn btn-primary rounded-pill border-white" style="background-color:#D6223F"><i class="fa-brands fa-google-drive" style="color:#FFFFFF"></i> View More Photos</a>
-    </div>
-  </div>
-</div>
-</div>
-
-<div style="background-color: #e8f5e9" class="pb-3 pt-3">
-<div class="container text-center mt-3" id="reviews">
-  <h1 style="font-family: 'Noto Serif', serif; color: #D6223F;padding-bottom: 2px;"> Testimonials*</h1>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
-    <div class="col-lg-4 col-md-6 mb-3">
-    <a target="_blank" href="https://g.co/kgs/dV1h2Pz" style="text-decoration: none; color: black;">
-      <div class="card h-100 rounded-card">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Anita Dahiya</h5>
-          <h6 class="card-subtitle mb-2 text-muted">
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-          </h6>
-          <p class="card-text">"My twins(Khushal and Khushali) joined Innovators 2 year ago and I noticed a lot of improvement in my kids. They are learning everything practically here. My kids are so happy in this school that they don’t even want a holiday on Sunday’s also. What else as a parent we want for our kids that kids are happy and learning so well."</p>
-        </div>
-      </div>
-      </a>
-    </div>
-    <!-- Repeat the above code for the next two cards -->
-        <div class="col-lg-4 col-md-6 mb-3">
-      <a target="_blank" href="https://g.co/kgs/ouAhJfS" style="text-decoration: none; color: black;">
-      <div class="card h-100 rounded-card">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Siri Chandana</h5>
-          <h6 class="card-subtitle mb-2 text-muted">
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-          </h6>
-          <p class="card-text">"I, Siri, studying in grade 7 here to tell you about my experience at Innovators International School. It is hard to go to a new school, you don't know what to expect, but when I arrived at Innovators I was greeted with open arms. Though it takes time to adjust to a new school I slowly adapted to the new curriculum. Talking about..."</p>
-        </div>
-      </div>
-      </a>
-    </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-      <a target="_blank" href="https://g.co/kgs/jv4RJ9X" style="text-decoration: none; color: black;">
-      <div class="card h-100 rounded-card">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Rama Sita Devi Kunadharaju</h5>
-          <h6 class="card-subtitle mb-2 text-muted">
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-          </h6>
-          <p class="card-text">"Innovators International School is exceptional! The teachers are caring and engaging, making learning enjoyable for our child. The emphasis on creativity and critical thinking sets this school apart. I'm impressed with the holistic approach to education, focusing on both academics and and character development..."</p>
-        </div>
-      </div>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <!-- Repeat the above code for the next three cards -->
-        <div class="col-lg-4 col-md-6 mb-3">
-      <a target="_blank" href="https://g.co/kgs/XF5y427" style="text-decoration: none; color: black;">
-      <div class="card h-100 rounded-card">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Sailu k kuri</h5>
-          <h6 class="card-subtitle mb-2 text-muted">
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-          </h6>
-          <p class="card-text">"As a parent of Abhiram, who completed his Grade 3 at Innovators international school and moving towards mastering his skills in Grade 4, and i am very happy making him part of this school. This school is Unique in its own way to inspire & train not only the kids but also parents, taking them to next level standard of education. I definitely support and suggest all the parents..."</p>
-        </div>
-      </div>
-      </a>
-    </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-      <a target="_blank" href="https://g.co/kgs/WRnGG7e" style="text-decoration: none; color: black;">
-      <div class="card h-100 rounded-card">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Sunil Kumar</h5>
-          <h6 class="card-subtitle mb-2 text-muted">
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-          </h6>
-          <p class="card-text">"I've had the privilege of getting to know Innovators International School over the past few years, and I'm truly impressed by the school's commitment to education and its nurturing environment. As a close friend to some of the parents and having visited the school on multiple occasions, I'd like to share my thoughts on what makes Innovators International School very special..."</p>
-        </div>
-      </div>
-      </a>
-    </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-      <a target="_blank" href="https://g.co/kgs/qGi4ST6" style="text-decoration: none; color: black;">
-      <div class="card h-100 rounded-card">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Rajashivaji Mavalati</h5>
-          <h6 class="card-subtitle mb-2 text-muted">
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-            <i class="bi bi-star-fill" style="color: gold;"></i>
-          </h6>
-          <p class="card-text">"Joining Innovators International School can indeed provide you with valuable educational opportunities and potentially contribute to a bright future. Quality education and innovative approaches can help students develop essential skills and knowledge for their future endeavors. I can see my kid improvement in 3months "</p>
-        </div>
-      </div>
-      </a>
-    </div>
-  </div>
-  <b style="color: #ff6600;font-size: large;">* Testimonials sourced from Google Reviews give you a glimpse of what our community thinks about us. Click on each card above to read the whole review. Discover what others are saying about their experiences with us!</b><br>
-  <a href="https://www.google.com/search?q=innovators+international+school+vizag&oq=innova&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRg5MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxAuGEDSAQgxNjkxajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8#lrd=0x3a395bf21cc172cb:0x4eaecf55fc4368de,1,,,," target="_blank" class="btn btn-primary rounded-pill border-white mt-3 mb-1" style="background-color:#D6223F"><i class="bi bi-google" style="color:#FFFFFF"></i> Google Reviews</a>
-  <a href="https://jsdl.in/DT-62HGHSU5HA7" target="_blank" class="btn btn-primary rounded-pill border-white mt-3 mb-1" style="background-color:#D6223F"><i class="fa-solid fa-star"></i> Justdial Reviews</a>
-</div>
-</div>
-
-<!-- Contact -->
-<div style="background-color: #e3f2fd" class="pb-3 pt-3">
-<div class="container text-center" id="contact">
-  <h1 style="font-family: 'Noto Serif', serif; color: #D6223F;"> Contact Us </h1>
-  <div class="row">
-
-    <!-- Working Hours and Location Column -->
-    <div class="col-lg-12">
-      <div class="row">
-        <!-- Working Hours Column -->
-        <div class="col-lg-6">
-          <div class="container mt-3">
-            <div class="row">
-              <div class="col-md-12">
-                <table class="table table-bordered" style="border-color: #D6223F;border-width: 3px;">
-                  <tbody>
-                    <tr>
-                      <th style="color:#D6223F; font-size: large; background-color: #c0c0c0;">Day</th>
-                      <th style="color:#D6223F; font-size: large; background-color: #c0c0c0;">Opening Time</th>
-                      <th style="color:#D6223F; font-size: large; background-color: #c0c0c0;">Closing Time</th>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Monday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Tuesday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Wednesday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Thursday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Friday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Saturday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td style="background-color: #D3D3D3;">Sunday</td>
-                      <td style="background-color: #D3D3D3;">7:00 AM</td>
-                      <td style="background-color: #D3D3D3;">8:00 PM</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+    <!-- About Section -->
+    <!-- style if needed to be changed later using an image: style="background-image: url('./assets/background-about.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;"-->
+      <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/aditya.jpg"
+              alt="Profile Image"
+              width="400"
+              height="200"
+            />
           </div>
-        </div>
-
-        <!-- Location Column -->
-        <div class="col-lg-6 mt-3 pt-4">
-          <div class="container">
-            <div class="d-flex justify-content-center">
-              <div class="w-100" style="max-width: 500px;">
-                <div class="ratio ratio-16x9">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.170221575516!2d83.36973076712033!3d17.77939874313636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sYour%20School%20Name!5e0!3m2!1sen!2sus"
-                    allowfullscreen="" loading="lazy"></iframe>
-                </div>
-              </div>
-            </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text" style="color:  #FFFFFF; font-weight: bold;">
+            I am a current CS Grad student at University of Southern California, Los Angeles, CA, USA. I am a driven individual with a passion for leveraging technology to tackle complex challenges and drive innovation.
+             With a solid foundation in computer science and a diverse skill set encompassing languages, frameworks, and tools such as Python, 
+             Angular, Machine Learning, Django, I thrive in dynamic environments where creativity and problem-solving are valued.<br><br><br>     
+            </p>
+            <p class="about-wrapper__info-text" style="color: #FFFFFF; font-weight: bold;">
+            I am poised to contribute effectively to innovative projects and make a meaningful impact in the tech industry.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="https://drive.google.com/file/d/1p7lAWxY-JuiPH8RfYlBTPQKreotwIsVq/view?usp=drive_link" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
+    <!-- /END About Section -->
 
-<!--
-<div class="container text-center">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrpfiuoy2EuueDZvR58OUIrLsyIKognSLhGLJ24npQmZFGfQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div> -->
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
 
-<div class="container text-center mt-3">
-  <b style="color: #D6223F;font-size: large;"> Have an Inquiry? Fill out the Inquiry form and a member from our team will reach out to you soon. </b><br>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5uXAR1SZwPyC5_YfNO7Jy8aYOTBE_uBz1AnRyf29WINSYjQ/viewform" target="_blank" class="btn btn-primary rounded-pill border-white mt-2" style="background-color:#D6223F"><i class="bi bi-info-circle-fill" style="color:#FFFFFF"></i> Inquiry Form</a>
-</div>
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">EventzForU <p style="color: #5b86e5;">(Web Dev, Django Framework, HTML, CSS, JS, Bootstrap)</p></h3>
+              <p class="project-wrapper__text-info">
+                Welcome to my event registration platform, where you can discover and register for exciting events effortlessly. 
+                Developed with Django, our website offers a user-friendly interface for browsing and signing up for events seamlessly. 
+                Whether you're looking for workshops, conferences, or networking opportunities, we've got you covered. Stay updated with event details, schedules, and registration deadlines. 
+                Start exploring and participating in enriching experiences today with our intuitive platform!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/AdityaAshvin/EventsForU" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
 
-<div class="container">
-<div class="row">
-  <div class="col-lg-6 text-center mt-5">
-    <i class="bi bi-telephone-fill"></i> <b style="color:#D6223F"> Phone:</b> <span style="font-size: large"> +91 97010 00703</span><br>
-    <i class="bi bi-envelope-fill"></i> <b style="color:#D6223F"> Email:</b> <span> innovatorsuniversity@gmail.com</span><br>
-  </div>
-  <div class="col-lg-6 text-center text-justify">
-    <i class="bi bi-geo-alt-fill"></i> <b style="color:#D6223F"> Address:</b> <br>
-    <span>Innovators International School, <br> 
-    Innovate Park, 23/3p, Yendada, <br>
-    Landmark: On Yendada - Rushikonda Road (Beside MK One),<br>
-     Visakhapatnam - 530045,<br>
-     Andhra Pradesh, India.</span>
-  </div>
-</div>
-</div>
-</div>
+            <div class="project-wrapper__image">
+              <a target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <iframe width="600" height="1000" src="https://www.youtube.com/embed/8xnAEtwq9pQ" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
 
-<div class="text-center pt-3 pb-3" style="background-color: #e8f5e9;">
-  <h1 style="font-family: 'Noto Serif', serif; color: #D6223F;"> Follow us on Social Media </h1>
-  <div class="social-icons gap-5 mb-3">
-    <a target="_blank" href="https://www.instagram.com/innovators_intl_school/" class="text-decoration-none me-3"><img class="img-fluid" src="school_assets/insta_logo.png"></a>
-    <a target="_blank" href="https://www.facebook.com/innovatorsfoundationschool" class="text-decoration-none me-3"><img class="img-fluid" src="school_assets/fb_icon.png"></a>
-    <a target="_blank" href="https://www.linkedin.com/company/innovators-international-school/?originalSubdomain=in" class="text-decoration-none me-3"><img class="img-fluid" src="school_assets/linkedin_icon.png"></a>
-    <a target="_blank" href="https://www.youtube.com/channel/UCPfggvMixTfBr4ITwWMoU5g" class="text-decoration-none me-3"><img class="img-fluid" src="school_assets/yt_icon.png"></a>
-  </div>
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">StocksForU <p style="color: #5b86e5;">(Web Dev, Angular, MongoDB, NodeJS, HTML, CSS, JS, Bootstrap)</p></h3>
+              <p class="project-wrapper__text-info">
+                Welcome to my stock trading platform, where you can buy and sell stocks with a fixed wallet and practice trading risk-free. 
+                Built on Flask and powered by MongoDB, we provide real-time data from Finnhub and Polygon, including interactive charts and essential trading information.
+                Whether you're a seasoned trader or just starting out, our platform empowers you to make informed investment choices. 
+                Explore the markets, track your portfolio, and stay ahead of the curve with our dynamic tools. Start your trading journey today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://aastocksearch4wt.wl.r.appspot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
 
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/stockssearchweb.JPG"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
 
-  <div class="row g-0">
-    <div class="col-md-4 pe-0">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F7jthD8UTdc" allowfullscreen></iframe>
+            <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">StocksForU Android App <p style="color: #5b86e5;">(Android App, Java, XML)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to my stock trading app, where you can buy and sell stocks with a fixed wallet and practice trading risk-free. 
+              Developed using Java and native Android technologies, our app offers real-time data from Finnhub and Polygon, featuring interactive charts and essential 
+              trading information. Whether you're a seasoned trader or just starting out, our platform empowers you to make informed investment choices. 
+              Explore the markets, track your portfolio, and stay ahead of the curve with our dynamic tools. Start your trading journey today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  aria-disabled="true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <iframe width="600" class="img-fluid" height="300" src="https://www.youtube.com/embed/DeD4ZhJnVWM" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Coin Dispenser <p style="color: #5b86e5;">(Internet Of Things, Electronics, Arduino, C Programming)</p></h3>
+              <p class="project-wrapper__text-info">
+                Welcome to our currency dispenser project, designed to efficiently dispense the desired number of coins based on the input amount. 
+                Utilizing an Arduino Uno R3 and servo motors, our project dispenses five rupee coins from one pipe and two and one rupee coins from another. 
+                Initially aiming for a coin sorting and counting machine, we pivoted due to challenges with coin radii. With input provided through the serial monitor, 
+                our dispenser accurately dispenses the required coins. Hardware setup and Arduino connections were completed, followed by coding and design efforts. 
+                Our project was fully functional and well-received, earning us the first prize in the EAC section and a Raspberry Pi.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/AdityaAshvin/coin_dispenser" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/currency_dispenser.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="500"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">WeatherForU <p style="color: #5b86e5;">(Web Dev, Django, HTML, CSS, JS)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to my weather update website, where you can access real-time weather information effortlessly. 
+              Developed with Django and powered by data from the OpenWeather API, our platform provides accurate and up-to-date weather forecasts for locations worldwide. 
+              Whether you're planning your day or tracking weather trends, our website offers a user-friendly interface for accessing temperature, humidity, wind speed, and more. 
+              Stay informed and make informed decisions with our reliable weather updates. 
+              Start exploring the weather in your area and beyond today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/AdityaAshvin/WeatherForU_Website" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/weatherforu.jpeg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="500"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">SketchGen <p style="color: #5b86e5;">(Machine Learning, Generative AI, Python)</p> </h3>
+              <p class="project-wrapper__text-info">
+              Welcome to our doodle generation project, where you can unleash your creativity with the help of machine learning models. 
+              Using the QuickDraw dataset, our platform allows users to input a doodle, and our models generate the next continuation stroke. With two implemented models - 
+              Transformer-based and LSTM-based - users can explore different approaches to doodle generation. Whether you're an artist looking for inspiration or just want to have fun
+              doodling, our platform offers an interactive and engaging experience. 
+              Start doodling and let our models inspire your creativity today!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="https://github.com/bigBrain1901/doodle-generation" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/sketchgen.JPG"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="500"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title"><u style="color: #5b86e5;">Research Publication:</u> Trinetra - A companion for the Blind <p style="color: #5b86e5;">(Machine Learning, Flutter App, Computer Vision, Speech2Text, Python)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to Trinetra App, a revolutionary companion designed to empower blind individuals to navigate the world independently. 
+              By harnessing cutting-edge technologies such as computer vision, speech recognition, image processing, and OCR, Trinetra provides a seamless experience for the blind.
+              Developed using the Flutter Framework, our app runs smoothly on both Android and iOS platforms. Trinetra enables users to identify objects in their surroundings, 
+              recognize text, and access information such as time, weather, and phone battery level through audio feedback.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://ieeexplore.ieee.org/document/9673267"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Publication</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/trinetra.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="200"
+                    height="100"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title"><u style="color: #5b86e5;">Research Publication:</u> Automatic Water Tank Cleaning Robot <p style="color: #5b86e5;">(Robotics, Deep Learning, Gazebo Simulation, Electronics)</p></h3>
+              <p class="project-wrapper__text-info">
+              Welcome to our innovative water tank cleaning robot system, designed to revolutionize traditional cleaning procedures. Our robot addresses the 
+              inefficiencies, safety concerns, and environmental issues associated with manual cleaning methods. Developed using Fusion 360 and simulated in Gazebo, 
+              our robot is equipped to clean both the floor and walls of water tanks effectively. Autonomous functionality is achieved through programs written in the 
+              Robot Operating System (ROS), allowing the robot to navigate and perform cleaning tasks with precision.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://ieeexplore.ieee.org/document/10047423"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Publication</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <iframe width="600" class="img-fluid" height="300" src="https://www.youtube.com/embed/FgVAWUOkzVk" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N9_zBoKDk7U" allowfullscreen></iframe>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact ME</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+          <i class="fa-solid fa-envelope"></i> adityaashvin2@gmail.com</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y56A8sY_0Mk" allowfullscreen></iframe>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/aditya.ashvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/aditya.ashvin.1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aditya-ashvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/AdityaAshvin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Aditya Ashvin
+        </p>
       </div>
-    </div>
-    <!-- Add more columns for additional videos if needed -->
-</div>
-</div>
+    </footer>
+    <!-- END Footer Section -->
 
-<div class="text-center mb-0 pb-0"  style="background-color: #D6223F !important;">
-<footer class="footer lg-mt-5">
-    <img class="img-fluid mt-2 pt-2" src="school_assets/footer_logo.png" width="10%" height="10%">
-    <p class="text-muted mb-2 pb-2" style="color: white !important;">&copy; 2024 - Innovators International School</p>
-</footer>
-</div>
-
-<!-- Bootstrap 5 JavaScript and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
 </html>
