@@ -1,0 +1,86 @@
+#navbar-brand{
+    color: white !important;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #D6223F; /* Your navbar color */
+    color: white; /* Text color */
+}
+
+/* Button styles */
+.btn {
+    background-color: #D6223F; /* Your button color */
+    color: white; /* Text color */
+    transition: all 0.3s ease;
+}
+
+.a:hover {
+    transform: translateY(-3px); /* Adjust the value for desired effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Adjust the value for desired effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+}
+
+/* Background color */
+body {
+    background-color: #f8f9fa; /* Neutral background color */
+}
+
+/* Card styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    background-color: #e3f2fd; /* Light gray background for cards */
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #D6223F;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    color: #ff6600;
+}
+
+.card-text {
+    color: #343a40;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #D6223F; /* Your navbar color */
+    color: white; /* Text color */
+}
+
+/* Section title styles */
+.section-title {
+    color: #343a40; /* Dark gray color for section titles */
+}
+
+.divider {
+  height: 2px; /* Height of the divider */
+  background-color: #ccc; /* Color of the divider */
+  margin-bottom: 20px; /* Add margin to create space below the divider */
+  margin-top: 20px; /* Add margin to create space below the divider */
+}
+
+.rounded-card {
+border-radius: 20px; /* Rounded corners */
+margin-bottom: 20px; /* Add space between cards */
+}
+
+.rounded-image {
+border-top-right-radius: 20px; /* Rounded corners */
+border-top-left-radius: 20px;
+margin-bottom: 20px; /* Add space between cards */
+}
