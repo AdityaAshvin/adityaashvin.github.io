@@ -89,9 +89,36 @@
           <br />
           Innovation Enthusiast in Tech.
         </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-        </p>
+      <p class="hero-cta gap-3">
+        <a class="cta-btn cta-btn--hero btn btn-secondary"
+          href="#about"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="See more about me and my background"
+          data-bs-custom-class="custom-tooltip">
+          About Me
+        </a>
+
+        <a class="cta-btn cta-btn--hero btn btn-secondary"
+          target="_blank"
+          href="https://drive.google.com/file/d/1NdoBpUeTu1Kis7L4acfHQCFtBcprvP2a/view?usp=sharing"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="View and download my detailed resume"
+          data-bs-custom-class="custom-tooltip">
+          View Resume
+        </a>
+
+        <a class="cta-btn cta-btn--hero btn btn-secondary"
+          target="_blank"
+          href="https://adityaashvin.github.io/AdityaAshvinGPT/"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Ask me anything — GPT bot will guide you"
+          data-bs-custom-class="custom-tooltip">
+          Try AdityaAshvin GPT
+        </a>
+      </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
         <div class="scroll-down"></div
@@ -123,9 +150,6 @@
             <p class="about-wrapper__info-text" style="color: #FFFFFF; font-weight: bold;">
             I am poised to contribute effectively to innovative projects and make a meaningful impact in the tech industry.
             </p>
-            <span class="about-wrapper__cta">
-              <a href="https://drive.google.com/file/d/1NdoBpUeTu1Kis7L4acfHQCFtBcprvP2a/view?usp=sharing" target="_blank" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
           </div>
         </div>
       </div>
@@ -495,10 +519,32 @@
     </footer>
     <!-- END Footer Section -->
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear()
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed-text", {
+        strings: [
+          "I love solving real-world problems using AI.",
+          "I build intelligent systems and autonomous robots.",
+          "I'm passionate about ML, NLP, and impactful innovation.",
+          "Currently exploring LLMs and multimodal AI."
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true,
+        smartBackspace: true
+      });
+    });
+  </script>
   </body>
 </html>
