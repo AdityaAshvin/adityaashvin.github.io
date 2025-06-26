@@ -79,6 +79,23 @@ body {
   padding: 0;
 }
 
+.custom-tooltip {
+  font-size: 1rem;
+  padding: 8px 12px;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 0.4rem;
+  max-width: 250px;
+  text-align: center;
+}
+
+  #typed-text {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    min-height: 2em;
+  }
+
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
