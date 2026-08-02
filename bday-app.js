@@ -38,9 +38,10 @@ const QUIZ_DATA = [
 // ---------------- 2. REASONS I LIKE YOU DATA ----------------
 // Customize these 3 reasons to anything you like!
 const REASONS_LIST = [
-  "How easy it is to talk and laugh with you about literally anything.",
-  "Your taste in food (and agreeing to random late-night food runs).",
-  "How competitive you get during games/quizzes."
+  "Your smile and cuteness",
+  "Sound effects you make while telling about something",
+  "You are smart and independent ft Apple Maps",
+  "You tolerate my stupid jokes, random questions, and useless facts"
 ];
 
 // ---------------- 3. MAP PLACES (NAMES ONLY) ----------------
@@ -266,7 +267,7 @@ revealReasonBtn.addEventListener('click', () => {
     reasonIndex++;
 
     if (reasonIndex === REASONS_LIST.length) {
-      revealReasonBtn.textContent = "Click for reason #4 ✨";
+      revealReasonBtn.textContent = "Click for reason #5 ✨";
     } else {
       revealReasonBtn.textContent = `Click for reason #${reasonIndex + 1} ✨`;
     }
