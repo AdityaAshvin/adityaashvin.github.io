@@ -1,5 +1,4 @@
-// ---------------- 0. ACCESS CODE CONFIG ----------------
-const SECRET_CODE = "0802"
+const SECRET_CODE = "1612"
 
 // ---------------- 1. QUIZ DATA ----------------
 const QUIZ_DATA = [
